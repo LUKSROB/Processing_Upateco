@@ -6,13 +6,7 @@ int z = 1;
 // operacion
 float res1 = y + z;
 
-boolean res2;
-
-if (x >= res1) {
-    res2 = true;
-} else {
-    res2 = false;  
-}
+boolean res2 = x >= res1;
 
 // imprimir resultado
 println("R1 = " + res1);

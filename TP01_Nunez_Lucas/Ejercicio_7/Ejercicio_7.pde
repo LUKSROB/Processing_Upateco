@@ -5,13 +5,7 @@ int cont2 = 4;
 // operacion
 float res1 = ++cont1;
 
-boolean res2;
-
-if (cont1 < cont2) {
-    res2 = true;
-} else {
-    res2 = false;  
-}
+boolean res2 = cont1 < cont2;
 
 // imprimir resultado
 println("R1 = " + res1);
