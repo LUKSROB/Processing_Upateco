@@ -18,7 +18,7 @@ void draw() {
     float distY = mouseY - (posY + 10);
     float dist = sqrt(distX*distX + distY*distY);
     
-    if (dist > 50) {
+    if (dist > 30) {
         // cofre
         fill(#8B4513);
         rect(posX, posY, 30, 20);
