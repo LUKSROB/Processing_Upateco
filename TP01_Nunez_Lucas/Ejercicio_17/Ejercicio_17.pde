@@ -9,10 +9,6 @@ void setup() {
 void draw() {
     background(200);
 
-    // cofre
-    fill(#8B4513);
-    rect(posX, posY, 30, 20);
-
     // Link
     fill(#339620);
     circle(mouseX, mouseY, 30);
@@ -21,6 +17,12 @@ void draw() {
     float distX = mouseX - (posX + 15);
     float distY = mouseY - (posY + 10);
     float dist = sqrt(distX*distX + distY*distY);
+    
+    if (dist > 50) {
+        // cofre
+        fill(#8B4513);
+        rect(posX, posY, 30, 20);
+    }
 
     // muestra la distancia en la pantalla
     textSize(20);
