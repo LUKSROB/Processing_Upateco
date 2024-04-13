@@ -17,7 +17,7 @@ void setup() {
         line(pX, pY, pX, pY + escY);
         line(pX, pY + escY, pX + escX, pY + escY);
         noStroke();
-        fill(252, 13, 60);
+        fill(255, 0, 0);
         ellipse(pX , pY - 10, 7, 7);
         pX += 60;
         pY += 60;
