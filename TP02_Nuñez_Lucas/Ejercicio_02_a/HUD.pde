@@ -4,7 +4,6 @@ public void setup() {
     size(400, 400);
     dice = new Dice();
     dice.setPosition(new PVector(width/2, height/2));
-    dice.setSide(100);
 }
 
 public void draw() {
@@ -25,7 +24,7 @@ public void keyPressed() {
 
 public void mostValue() {
     String text = "";
-
+    
     switch(dice.getValue()) {
         case 1 : {
             text = "Uno";
