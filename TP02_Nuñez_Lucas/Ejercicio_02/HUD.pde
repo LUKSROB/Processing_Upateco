@@ -1,10 +1,10 @@
-private Dado dado;
+private Dice dice;
 
 public void setup() {
   size(400, 400);
-  dado = new Dado();
-  dado.setPosition(new PVector(width/2, height/2));
-  dado.setLado(100);
+  dice = new Dice();
+  dice.setPosition(new PVector(width/2, height/2));
+  dice.setSide(100);
 }
 
 public void draw() {
@@ -13,20 +13,20 @@ public void draw() {
 public void keyPressed() {
   if (keyCode == ENTER) {
     background(200);
-    dado.lanzar();
-    dado.dibujar();
+    dice.throwD();
+    dice.display();
     mostValue();
   }
 
   if (keyCode == BACKSPACE) {
-    dado.data();
+    dice.data();
   }
 }
 
 public void mostValue() {
     String text = "";
     
-    switch(dado.getValue()) {
+    switch(dice.getValue()) {
         case 1 : {
             text = "Uno";
             break;
