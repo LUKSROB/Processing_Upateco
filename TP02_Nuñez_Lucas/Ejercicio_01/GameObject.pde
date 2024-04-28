@@ -1,4 +1,4 @@
-/*abstract class GameObject {
+abstract class GameObject {
     protected PVector position;
     protected PImage image;
 
@@ -15,4 +15,3 @@
         return this.position;
     }
 }
-*/

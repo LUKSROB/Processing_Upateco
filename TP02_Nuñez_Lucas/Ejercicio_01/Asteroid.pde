@@ -1,4 +1,4 @@
-class Asteroid {
+class Asteroid extends GameObject{
     PImage image;
     PVector position;
     PVector velocity;
@@ -14,8 +14,7 @@ class Asteroid {
     }
 
     public void chargeImage() {
-        imageMode(CENTER);
-        image = loadImage("GAsteroid" + int(random(0, 2)) + ".png");
+        image = loadImage("GAsteroid" + int(random(0, 3)) + ".png");
     }
 
     public void display() {

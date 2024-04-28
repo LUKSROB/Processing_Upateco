@@ -3,7 +3,7 @@ Asteroid[] asteroid;
 
 public void setup() {
     size(800, 800);
-    ship = new Ship(new PVector(0, 0), new PVector(5, 5), PI*1.5);
+    ship = new Ship(new PVector(0, 0), new PVector(5, 5), PI/2);
 
     asteroid = new Asteroid[5];
     for (int i = 0; i < asteroid.length; i++) {
