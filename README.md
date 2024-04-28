@@ -1,4 +1,5 @@
-# Trabajos Practicos de programación con Processing en UPATecO
+# Trabajos Prácticos de programación con Processing en UPATecO
 
-## Materia: Programacion para Videojuegos
+## Carrera: Tecnicatura Universitaria en Diseño y Desarrollo de Videojuegos
+## Materia: Programación para Videojuegos
 ## Profesor: Ariel A Vega
