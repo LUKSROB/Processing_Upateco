@@ -1,41 +1,34 @@
 Frog frog;
-Turtle turtle1;
-Turtle turtle2;
-Log log1;
-Log log2;
-
+Turtle[] turtle;
+Log[] log;
+Cars[] cars;
 
 public void setup() {
     size(600, 600);
-    frog = new Frog();
-    turtle1 = new Turtle();
-    turtle2 = new Turtle();
-    log1 = new Log();
-    log2 = new Log();
-    frog.setPosition(new PVector(width/2, height/2));
-    turtle1.setPosition(new PVector(width/2, height/2 - 90));
-    turtle2.setPosition(new PVector(width/2, height/2 + 45));
-    log1.setPosition(new PVector(width/2, height/2 - 45));
-    log2.setPosition(new PVector(width/2, height/2));
-    log1.setLength(60);
-    log2.setLength(60);
-    turtle1.setDirection(3);
-    turtle2.setDirection(-3);
-    log1.setDirection(-3);
-    log2.setDirection(3);
+    frog = new Frog(new PVector(width/2, height-80));
+
+    turtle = new Turtle[20];
+    log = new Log[33];
+    cars = new Cars[8];
+
+    int posX = 0;
+    for (int a = 0; a < 4; a++) {
+        
+    }
+    turtle[0] = new Turtle(new PVector(0, 160));
+    turtle[1] = new Turtle(new PVector(45, 160));
+    turtle[2] = new Turtle(new PVector(180, 160));
+    turtle[3] = new Turtle(new PVector(225, 160));
 }
 
 public void draw() {
     background(0);
-    turtle1.display();
-    turtle2.display();
-    log1.display();
-    log2.display();
-    log1.move();
-    log2.move();
-    turtle1.move();
-    turtle2.move();
     frog.display();
+
+    for (int i = 0; i < 4; i++) {
+        turtle[i].display();
+        turtle[i].move();
+    }
 }
 
 public void keyReleased() {

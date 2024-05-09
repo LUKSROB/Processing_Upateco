@@ -1,12 +1,15 @@
-class Log extends GameObject {
+class Log {
+    protected PVector position;
+    protected PImage image;
     private int length;
 
     public Log() {
         image = loadImage("Log.png");
     }
-    @Override
+
     public void display() {
-        image(this.image, this.position.x, this.position.y, this.length, 60);
+        imageMode(CENTER);
+        image(this.image, this.position.x, this.position.y, 60, 60);
     }
 
     public void setLength(int length) {
@@ -16,10 +19,8 @@ class Log extends GameObject {
     public void move() {
         if (this.position.x > width + 45) {
             this.position.x = - 45;
-        } else if (this.position.x < - 45) {
-            this.position.x = width + 45;
         }
-        this.position.x += this.direction;
+        this.position.x += 1;
 
     }
 }

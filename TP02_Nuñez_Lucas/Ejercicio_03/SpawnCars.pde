@@ -1,4 +1,4 @@
-class GameObject {
+class SpawnCars {
     protected PVector position;
     protected int direction;
     protected PImage image;

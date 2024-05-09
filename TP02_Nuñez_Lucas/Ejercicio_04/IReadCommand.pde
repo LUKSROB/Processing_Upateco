@@ -1,0 +1,3 @@
+interface IReadCommand {
+    void readCommand();
+}
